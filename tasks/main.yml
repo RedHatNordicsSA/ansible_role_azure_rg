@@ -1,0 +1,8 @@
+---
+# tasks file for ansible_azure_vm
+- name: "Ensure resource group {{ azure_rg_name }} exist"
+  azure.azcollection.azure_rm_resourcegroup:
+    name: "{{ azure_rg_name }}"
+    location: "{{ azure_location }}"
+    state: "{{ azure_rg_state }}"
+    force_delete_nonempty: "{{ azure_rg_force_delete }}"

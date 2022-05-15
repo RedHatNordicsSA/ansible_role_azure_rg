@@ -1,0 +1,11 @@
+---
+# defaults file for ansible_azure_rm
+# general vars 
+azure_location: northeurope
+# resource group vars
+azure_rg_name: demo
+azure_rg_state: present
+azure_rg_force_delete: yes
+azure_rg_tags:
+  env: testing
+  app: demo
